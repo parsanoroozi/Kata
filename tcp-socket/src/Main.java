@@ -7,6 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("Im in my personal computer");
 
         String a = "..WW......W..W.W.\n" +
                 "W..W.....W....W..\n" +
