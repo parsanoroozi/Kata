@@ -1,37 +1,26 @@
 import keta.Kata5;
 import keta.Kata6;
 import keta.Kata7;
+import keta.kata4.Boggle;
 
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        String a = "..WW......W..W.W.\n" +
-                "W..W.....W....W..\n" +
-                ".....WWW..WW..W.W\n" +
-                "...WW.....WW.W.W.\n" +
-                "..WW.W..W........\n" +
-                "W.WW.WWW...W...WW\n" +
-                "...W.WW...WW.W...\n" +
-                "W.W..W..W.W....W.\n" +
-                "....WW...W....W..\n" +
-                "W......W..WW..W..\n" +
-                "W..W........W.W.W\n" +
-                "...WWW....W..W...\n" +
-                ".W....WWWW.WW..W.\n" +
-                "...WW.WW.W..W...W\n" +
-                ".W......WW..W....\n" +
-                "WW...W..W..W...WW\n" +
-                ".........W.W.W...";
-        boolean res  = Kata5.pathFinder(a);
-        System.out.println("res : " + res);
-//        for (int i = 0; i < 100; i++){
-//            int res = Kata5.dblLinear(14021 + i);
-//            System.out.println("n is : " + (14021+i) + " and res("+i+") is : " + res);
-//        }
-
-
+//        final char[][] board = {
+//                {'E','A','R','A'},
+//                {'N','L','E','C'},
+//                {'I','A','I','S'},
+//                {'B','Y','O','R'}
+//        };
+//        final String[] words = {"C", "EAR","EARS","BAILER","RSCAREIOYBAILNEA" ,"CEREAL" ,"ROBES"};
+//        Arrays.stream(words).sequential().forEach(word -> {
+//            System.out.println(new Boggle(board, word));
+//        });
     }
 }
