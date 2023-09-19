@@ -18,6 +18,7 @@ public class Main {
                 {'I','A','I','S'},
                 {'B','Y','O','R'}
         };
+//        expecteds = {         true, true, false, true,    true,               false,    false };
         final String[] words = {"C", "EAR","EARS","BAILER","RSCAREIOYBAILNEA" ,"CEREAL" ,"ROBES"};
         Arrays.stream(words).sequential().forEach(word -> {
             Boggle boggle = new Boggle(board, word);
