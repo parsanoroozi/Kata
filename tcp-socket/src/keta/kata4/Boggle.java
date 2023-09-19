@@ -58,31 +58,52 @@ public class Boggle {
             }
             // top
             if(item.x - 1 > 0){
-
+                if(board[item.x-1][item.y] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x - 1, item.y, item.i + 1));
+                }
             }
             // top-right
             if(item.x - 1 > 0 && item.y +1 < board.length){
-
+                if(board[item.x-1][item.y+1] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x - 1, item.y + 1, item.i + 1));
+                }
             }
             // right
             if(item.y +1 < board.length){
-
+                if(board[item.x][item.y+1] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x, item.y + 1, item.i + 1));
+                }
             }
             // bottom-right
             if(item.x + 1 < board.length && item.y +1 > board.length){
-
+                if(board[item.x+1][item.y+1] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x + 1, item.y + 1, item.i + 1));
+                }
             }
             // bottom
             if(item.x + 1 < board.length){
-
+                if(board[item.x+1][item.y] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x + 1, item.y, item.i + 1));
+                }
             }
             // bottom-left
             if(item.x + 1 < board.length && item.y -1 > -1){
-
+                if(board[item.x+1][item.y-1] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x + 1, item.y - 1, item.i + 1));
+                }
             }
             // left
             if(item.y -1 > -1){
-
+                if(board[item.x][item.y-1] == word.charAt(item.i+1)){
+                    if(item.i+1== board.length-1) return true;
+                    queue.add(new MapItem(item.x, item.y - 1, item.i + 1));
+                }
             }
 
 
